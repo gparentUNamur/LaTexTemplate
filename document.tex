@@ -1,0 +1,132 @@
+\documentclass[12pt,a4paper]{report}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{makeidx}
+\usepackage{graphicx}
+\usepackage[left=1.60cm, right=1.60cm, top=1.50cm, bottom=1.50cm]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage{fontspec}
+\setmainfont[Ligatures=TeX]{Roboto}
+\setsansfont[Ligatures=TeX]{Roboto}
+%\usepackage[sfdefault]{FiraSans}
+\usepackage{newtxsf}
+\usepackage{titlesec}
+\usepackage{xcolor}
+\usepackage{afterpage}
+
+\setcounter{secnumdepth}{3}
+\newcommand\blankpage{%
+	\null
+	\thispagestyle{empty}%
+	\addtocounter{page}{-1}%
+	\newpage}
+\usepackage{hyperref}
+\hypersetup{                    % parametrage des hyperliens
+	colorlinks=true,                % colorise les liens
+	breaklinks=true,                % permet les retours à la ligne pour les liens trop longs
+	urlcolor= blue,                 % couleur des hyperliens
+	linkcolor= black,                % couleur des liens internes aux documents (index, figures, tableaux, equations,...)
+	citecolor= black                % couleur des liens vers les references bibliographiques
+}
+\usepackage[french]{babel}
+\usepackage{tabularx}
+\author{Guillaume Parent}
+\title{INFOB331 : Théorie des Organisation\\Synthèse}
+\date{Année académique 2017-2018}
+\titleformat{\part}[hang]{\bf\huge}{\thepart}{2pc}{}
+\titleformat{\chapter}[hang]{\bf\huge}{\thechapter}{2pc}{}
+\titleformat{\section}[hang]{\bf\huge}{\thesection}{2pc}{}
+
+
+
+\begin{document}
+	
+	\begin{titlepage} % Suppresses displaying the page number on the title page and the subsequent page counts as page 1
+		\newcommand{\HRule}{\rule{\linewidth}{0.5mm}} % Defines a new command for horizontal lines, change thickness here
+		
+		\centering % Centre everything on the page
+		
+		%------------------------------------------------
+		%	Headings
+		%------------------------------------------------
+		
+		\textsc{\LARGE Université de Namur\\Faculté d'Informatique}\\[1.5cm] % Main heading such as the name of your university/college
+		
+		\textsc{\Large }\\[0.5cm] % Major heading such as course name
+		
+%		\textsc{\large Synthèse du cours}\\[0.5cm] % Minor heading such as course title
+		
+		%------------------------------------------------
+		%	Title
+		%------------------------------------------------
+		
+		\HRule\\[0.4cm]
+		
+		{\huge\bfseries Title}\\[0.4cm] % Title of your document
+		
+		\HRule\\[1.5cm]
+		
+		%------------------------------------------------
+		%	Author(s)
+		%------------------------------------------------
+		
+			\begin{minipage}{0.4\textwidth}
+				\begin{flushleft}
+					\large
+					\textit{Auteur}\\
+					\textsc{Guillaume Parent} % Your name
+				\end{flushleft}
+			\end{minipage}
+			~
+			\begin{minipage}{0.4\textwidth}
+				\begin{flushright}
+					\large
+					\textit{Professeurs}\\
+					 % Supervisor's name
+				\end{flushright}
+			\end{minipage}
+		
+		% If you don't want a supervisor, uncomment the two lines below and comment the code above
+%		{\large\textit{Auteur}}\\
+%		Guillaume \textsc{Parent} % Your name
+		
+		%------------------------------------------------
+		%	Date
+		%------------------------------------------------
+		\vfill
+		\includegraphics[height=5cm]{graphics/logo.png}
+		\vfill\vfill\vfill % Position the date 3/4 down the remaining page
+		
+		{\large Année académique 2018-2019} % Date, change the \today to a set date if you want to be precise
+		
+		%------------------------------------------------
+		%	Logo
+		%------------------------------------------------
+		
+		%\vfill\vfill
+		%	\includegraphics[width=0.2\textwidth]{graphics/vins}\\[1cm] % Include a department/university logo - this will require the graphicx package
+		
+		%----------------------------------------------------------------------------------------
+		
+		\vfill % Push the date up 1/4 of the remaining page
+\newpage\null\thispagestyle{empty}\newpage
+	\end{titlepage}
+%	\afterpage{\blankpage}
+
+	\tableofcontents
+	
+	
+	
+	
+	
+	
+	
+	
+	\begin{center}
+		\rule{15cm}{3pt}
+	\end{center}
+
+	
+\end{document}
